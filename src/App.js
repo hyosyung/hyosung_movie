@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+function Food({ fav }) {
+  return <h1> I love {fav}</h1>;
+}
+
+//props=컴포넌트로 데이터를 보낼 때 사용할 수 있는 방법
 
 function App() {
+  //App이라는 컴포넌트를 정의한다.
+  // props에 있는 데이터는 문자열일 경우를 제외하면 모두 중괄호로 감싸야 함!
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> Hello </h1>
+      <Food fav="kimchi" />
     </div>
   );
 }

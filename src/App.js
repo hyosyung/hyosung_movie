@@ -1,50 +1,19 @@
 import React from "react";
 
 class App extends React.Component {
-  //state를 사용하기 위해서 클래스형 컴포넌트를 작성할 것임
-  //React.Component 클래스로부터 상속을 받음
-  constructor(props){
-    super(props);
-    console.log('Hello');
-  }
+  state = {
+    isLoading: true,
+  };
 
   componentDidMount(){
-    console.log("component rendered");
+    setTimeout(()=>{
+      this.setState({isLoading:false});
+    },6000);//setState함수 사용법 (첫번째 인자에 함수, 두번째 인자에 시간) = 시간이 지나면 함수 실행
   }
-
-  componentDidUpdate(){
-    console.log('I just updated');
-  }
-
-  componentWillUnmount(){
-    console.log("Goodbye");
-  }
-
-  state = {
-    count: 0,
-  };
-
-  add = () => {
-    this.setState((current) => ({
-      count: current.count + 1,
-    }));
-  };
-
-  Minus = () => {
-    this.setState((current) => ({
-      count: current.count - 1,
-    }));
-  };
 
   render() {
-    console.log("I'm rendering");
-    return (
-      <div>
-        <h1>This number is : {this.state.count}</h1>
-        <button onClick={this.add}>Add</button>
-        <button onClick={this.Minus}>Minus</button>
-      </div>
-    );
-  } //JSX를 반환하기 위해서 render()함수를 사용한다.
+    const { isLoading } = this.state;
+    return <div>{isLoading ? "Loading..." : "We are ready"}</div>;
+  }
 }
 export default App;

@@ -9,8 +9,13 @@ class App extends React.Component {
     movies:[],
   };
 
+  getMovies=async()=>{
+    const movies=await axios.get(List_movies);
+    console.log(movies);
+  }
+
   componentDidMount(){
-    axios.get(List_movies);
+    this.getMovies();
     //개발자 도구 -> network탭 -> name의 json 확인!
   }
 

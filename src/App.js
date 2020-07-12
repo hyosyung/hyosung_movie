@@ -10,7 +10,11 @@ class App extends React.Component {
   };
 
   getMovies=async()=>{
-    const movies=await axios.get(List_movies);
+    const {
+      data:{
+        data:{movies},
+      },//받아온 객체 안에 접근하여 가져오기!! movies라는 이름을 그대로 쓸 수 있다
+    }=await axios.get(List_movies);
     console.log(movies);
   }
 

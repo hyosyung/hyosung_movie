@@ -1,19 +1,22 @@
 import React from "react";
+import axios from 'axios';
+
+const List_movies=`https://yts-proxy.now.sh/list_movies.json`;
 
 class App extends React.Component {
   state = {
     isLoading: true,
+    movies:[],
   };
 
   componentDidMount(){
-    setTimeout(()=>{
-      this.setState({isLoading:false});
-    },6000);//setState함수 사용법 (첫번째 인자에 함수, 두번째 인자에 시간) = 시간이 지나면 함수 실행
+    axios.get(List_movies);
+    //개발자 도구 -> network탭 -> name의 json 확인!
   }
 
   render() {
     const { isLoading } = this.state;
-    return <div>{isLoading ? "Loading..." : "We are ready"}</div>;
+    return <div>{isLoading ? "Loading..." : "We are ready"}</div>;//중괄호 안에 삼항 연산자
   }
 }
 export default App;

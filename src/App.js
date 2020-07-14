@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Movie from "./Movie";
+import './App.css';
 
 const List_movies = `https://yts-proxy.now.sh/list_movies.json?sort_by=rating`;
 
@@ -42,6 +43,7 @@ class App extends React.Component {
                 title={movie.title}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                genres={movie.genres}
               />
             ))}
           </div>

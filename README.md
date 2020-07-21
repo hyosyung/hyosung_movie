@@ -57,3 +57,9 @@
 ![네비](https://user-images.githubusercontent.com/66842710/88022847-f6742480-cb6a-11ea-849a-c1accafd391c.JPG)
 + main페이지를 담은 컴포넌트의 exact prop을 true로 설정하여, 페이지를 이동할 때, 전체가 새로고침 되지 않도록 하였습니다.
 + a태그를 이용하면 리액트의 장점을 살릴 수 없으므로 {Link}를 react-router-dom에서 추가하여 Link를 사용!
+
+------------
+
+### 미디어 쿼리 사용
+![KakaoTalk_20200721_165218411](https://user-images.githubusercontent.com/66842710/88028227-54a50580-cb73-11ea-9635-e1beaa2314dc.png)
++ 화면의 너비가 1090px아래로 내려가게 된다면, 영화 카드가 한 행에 한장씩 나옵니다. 네비게이션오 하단으로 옮겨집니다.

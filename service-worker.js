@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hyosung_movie/precache-manifest.a5b3061de75c9f4c4d6028d8f5435ae6.js"
+  "/hyosung_movie/precache-manifest.3bfc11cc74760fca13a1be764b37ce13.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -6,7 +6,7 @@ function Navigation() {
   return (
     <div className="nav">
       <Link to="/">Home</Link>
-      <Link to={{ pathname: "/about", stage: { fromNavigation: true } }}>
+      <Link to="./about">About
         About
       </Link>
     </div>

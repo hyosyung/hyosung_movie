@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 
-function Detail(props){
-    console.log(props);
+class Detail extends React.Component {
+  componentDidMount() {
+    const { loaction, history } = this.props;
+  }
+
+  render() {
     return <span>hello</span>;
+  }
 }
-
 export default Detail;

@@ -1,6 +1,6 @@
 # 리액트로 만들어본 영화 앱
 
-### 메인 화면
+### [메인 화면](http://hyosyung.github.io/hyosung_movie)
 ![main](https://user-images.githubusercontent.com/66842710/88022091-96c94980-cb69-11ea-8cf8-24a154398164.JPG)
 
 

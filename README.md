@@ -3,6 +3,7 @@
 ### [메인 화면](http://hyosyung.github.io/hyosung_movie)
 ![main](https://user-images.githubusercontent.com/66842710/88022091-96c94980-cb69-11ea-8cf8-24a154398164.JPG)
 
+------------
 
 ### API를 가져온 사이트(yts)
 ![yts](https://user-images.githubusercontent.com/66842710/88022292-fd4e6780-cb69-11ea-8445-cdbca4420e0a.JPG)
@@ -10,11 +11,13 @@
 + 클래스형 컴포넌트의 componentDidMount()안에 비동기 함수를 넣고, 함수가 끝나면 loading이 끝나도록 만들었습니다.
 + 즉 데이터를 받아오기 전까지는 'loading...' 이 출력됩니다.
 
+------------
 
 ### API에서 장르와 년도, 제목, 요약등을 불러와서 출력
 ![1](https://user-images.githubusercontent.com/66842710/88022391-22db7100-cb6a-11ea-833a-d643fda2b524.JPG)
 + 클릭하면 detail을 설명하는 창으로 이동됩니다. 만약 detail이 undefine일 경우 다시 main페이지로 리다이렉트 됩니다.
 
+------------
 
 ### CSS를 이용하여 기본적인 디자인
 ```
@@ -48,6 +51,7 @@
 ```
 + 하얀색 직사각형에 그림자가 있는 모양을 만들었습니다.
 
+------------
 
 ### 네비게이션
 ![네비](https://user-images.githubusercontent.com/66842710/88022847-f6742480-cb6a-11ea-849a-c1accafd391c.JPG)
